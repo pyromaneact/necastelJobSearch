@@ -29,7 +29,16 @@ in order for the files to be generated properly each catagory must have its own 
 ## README.md structure
 each README.md within the challange README.md files is made up of of keys represented by heading 2 size and values contained within code blocks
 ### table of all keys possible
-**to be inserted later**
+| key         | discription                                                               | alternitive key | 
+|-------------|---------------------------------------------------------------------------|-----------------|
+| discription | the markdown that will be displayed to the user whn opening the challange | Description     |
+| soulution   | in current verson ignored and skipped                                     | Solution        |
+| flag        | the flag that solves the challange (in future to develop regex support    | Flag            |
+| points      | the amount of pouints to be gifted con challange completion               | Points          |
+| hints       | not implumented yet                                                       | Hints           |
+| files       | not implumented yet                                                       | Files           |
+
+
 ### exsample
 ``````
 # title
