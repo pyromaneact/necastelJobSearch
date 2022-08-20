@@ -29,14 +29,14 @@ in order for the files to be generated properly each catagory must have its own 
 ## README.md structure
 each README.md within the challange README.md files is made up of of keys represented by heading 2 size and values contained within code blocks
 ### table of all keys possible
-| key         | discription                                                               | alternitive key | required? |
-|-------------|---------------------------------------------------------------------------|-----------------|-----------|
-| discription | the markdown that will be displayed to the user whn opening the challange | Description     | Y         |
-| soulution   | in current verson ignored and skipped                                     | Solution        | N         |
-| flag        | the flag that solves the challange (in future to develop regex support    | Flag            | Y         |
-| points      | the amount of points to be gifted on challange completion default 7       | Points          | N         |
-| hints       | not implumented yet                                                       | Hints           | N         |
-| files       | not implumented yet                                                       | Files           | N         |
+| key         | discription                                                               | alternitive key          | required? |
+|-------------|---------------------------------------------------------------------------|--------------------------|-----------|
+| description | the markdown that will be displayed to the user whn opening the challange | Description, discription | Y         |
+| solution    | in current verson ignored and skipped                                     | Solution, soulution      | N         |
+| flag        | the flag that solves the challange (in future to develop regex support    | Flag                     | Y         |
+| points      | the amount of points to be gifted on challange completion default 7       | Points                   | N         |
+| hints       | not implumented yet                                                       | Hints                    | N         |
+| files       | not implumented yet                                                       | Files                    | N         |
 
 
 ### exsample
