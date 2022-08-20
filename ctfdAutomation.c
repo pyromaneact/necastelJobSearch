@@ -89,7 +89,7 @@ int extractData(FILE *filePointer, char charitor, char *pos, char start[], char 
 	int endPosition=0;
         int hashFlag = 0;
 	char *title = pos;
-        /*loop through entire file*/
+        //loop through entire file
         while (hashFlag != 2 && charitor != EOF){
 
         	if (hashFlag==1){
@@ -158,10 +158,10 @@ int main(){
 
 					strcat(readmePath,dpChallange->d_name);
 					strcat(readmePath,"/README.md");
-					/*Open File and asign the begining to a pointer*/
+					//Open File and asign the begining to a pointer
 					FILE *filePointer=NULL;
 					filePointer = fopen(readmePath, "r");
-					/*check file has opened*/
+					//check file has opened
 					if (filePointer == NULL){
 						printf("failed to open file %s", readmePath);
 					}else{
@@ -169,16 +169,16 @@ int main(){
 						char *titlePosition;
 						titlePosition=&title[0];
 
-						/*get first charitor*/
+						//get first charitor
 						char charitor = getc(filePointer);
 
-						/*Extract the title*/
+						//Extract the title
 						extractData(filePointer,charitor, titlePosition, "# ", "\n");
-						/*set up strings that will concatanate with the chalanges and flags var to become  challanges.json and flags.json*/
+						//set up strings that will concatanate with the chalanges and flags var to become  challanges.json and flags.json
 						char chalangeinfo[9000]="{\"id\":";
 						char flaginfo[1000]="{\"id\":";
 
-						/*add and increment id's*/
+						//add and increment id's
 						challangeCount += 1;
 						char id[4];
 						sprintf(id, "%d", challangeCount);
@@ -193,12 +193,12 @@ int main(){
 						strcat(chalangeinfo,title);
 						strcat(chalangeinfo,"\",");
 
-						/*flag data strings*/
+						//flag data strings
 						char regex[20]= "\"type\":\"";
 						char flag[50]= "\"content\":\"";
 						char caseSensitivity[30]= "\"data\":\"";
 
-						/*challange data strings*/
+						//challange data strings
 						int count=0;
 						char description[900]="\"description\":\"";
 						char maxAttempts[20] = "\"max_attempts\":";
@@ -216,7 +216,7 @@ int main(){
 
 						while (!endofFile){
 							count+=1;
-							/*get next feild*/
+							//get next feild
 							char feildName[70]="";
 							char *feildPosition;
 
@@ -303,7 +303,7 @@ int main(){
 						}
 
 
-						/*make challange and flag strings for hte challange*/
+						//make challange and flag strings for hte challange
 						strcat(flaginfo,regex);
                 				strcat(flaginfo,flag);
                 				strcat(flaginfo,caseSensitivity);
@@ -331,7 +331,7 @@ int main(){
         closedir(catagory); // close the handle (pointer)
 
 
-	/*post file crawl processing*/
+	//post file crawl processing
 	char amount[4];
         sprintf(amount, "%d", challangeCount);
 	int flagLength=strlen(flags);
