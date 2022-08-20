@@ -7,6 +7,7 @@ c code to automaticly add challanges into ctfd by creating the nessesery zip fil
 in order for the files to be generated properly each catagory must have its own folder that contains a folder for each challange that has all necessery challanges in a README.md file README.md files will be ignored in the rest of the file structure and anything thats not a README.md file will be ignored within the challange folder e.g. setup files and docker images.
 
 ### exsample
+```
 +---main-CTF-folder
 |   /README.md *(ignored)*
 |   +---Web
@@ -24,7 +25,7 @@ in order for the files to be generated properly each catagory must have its own 
 |   |   |   \README.md
 |   |   +---CryptoChallange2
 |   |   |   \README.md
-
+```
 ## README.md structure
 each README.md within the challange README.md files is made up of of keys represented by heading 2 size and values contained within code blocks
 ### table of all keys possible
