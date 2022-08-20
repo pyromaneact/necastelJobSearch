@@ -230,11 +230,11 @@ int main(){
 							endofFile = extractData(filePointer,charitor, contentPosition, "```", "```");
 							if (endofFile){
 
-							}else if (!strcmp(feildName,"discription") || !strcmp(feildName,"Description") ){
+							}else if (!strcmp(feildName,"discription") || !strcmp(feildName,"Description") || !strcmp(feildName,"description") ){
 								addingBackslash(contentPosition);
 								strcat(description, feildContent);
 								strcat(description, "\",");
-							}else if (!strcmp(feildName,"soulution") || !strcmp(feildName,"Solution")){
+							}else if (!strcmp(feildName,"soulution") || !strcmp(feildName,"Solution") || !strcmp(feildName,"solution")){
 							}else if (!strcmp(feildName,"flag") || !strcmp(feildName,"Flag")){
 								removeSpecialChars(contentPosition);
 								addingBackslash(contentPosition);
