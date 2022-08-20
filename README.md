@@ -27,7 +27,7 @@ in order for the files to be generated properly each catagory must have its own 
 |   |   |   \README.md
 ```
 ## README.md structure
-each README.md within the challange README.md files is made up of of keys represented by heading 2 size and values contained within code blocks
+each README.md within the challange README.md files is made up of of keys represented by heading 2 size and values contained within code blocks any unreconised keys will be ignored
 ### table of all keys possible
 | key         | discription                                                               | alternitive key          | required? |
 |-------------|---------------------------------------------------------------------------|--------------------------|-----------|
