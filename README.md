@@ -34,10 +34,12 @@ each README.md within the challange README.md files is made up of of keys repres
 | description | the markdown that will be displayed to the user whn opening the challange | Description, discription | Y         |
 | solution    | in current verson ignored and skipped                                     | Solution, soulution      | N         |
 | flag        | the flag that solves the challange (in future to develop regex support)   | Flag                     | Y         |
+| reflag      | the regex for the flag that solves the challange                          | Reflag", REflag          | Y         |
 | points      | the amount of points to be gifted on challange completion default 7       | Points                   | N         |
 | hints       | not implumented yet                                                       | Hints                    | N         |
 | files       | not implumented yet                                                       | Files                    | N         |
 
+**flag XOR reflag is needed not both **
 
 ### exsample
 ``````
