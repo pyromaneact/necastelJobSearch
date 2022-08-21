@@ -235,6 +235,13 @@ int main(){
 								strcat(description, feildContent);
 								strcat(description, "\",");
 							}else if (!strcmp(feildName,"soulution") || !strcmp(feildName,"Solution") || !strcmp(feildName,"solution")){
+							}else if (!strcmp(feildName,"reflag") || !strcmp(feildName,"Reflag")|| !strcmp(feildName,"REflag")|| !strcmp(feildName,"ReFlag")){
+								strcat(regex, "regex\",");
+								removeSpecialChars(contentPosition);
+								addingBackslash(contentPosition);
+								strcat(flag,feildContent);
+								strcat(flag,"\",");
+							}
 							}else if (!strcmp(feildName,"flag") || !strcmp(feildName,"Flag")){
 								removeSpecialChars(contentPosition);
 								addingBackslash(contentPosition);
