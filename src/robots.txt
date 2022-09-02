@@ -1,0 +1,7 @@
+# version: 23c6436a57dd9275cbaec1ed32c76dda5108ff26
+
+# HTTPS www.bbc.co.uk
+
+User-agent: *
+
+Disallow: /flag.txt
